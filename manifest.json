@@ -1,7 +1,7 @@
 {
   "name": "Promoted Tweets Blocker",
-  "description": "Block promoted tweets and enjoy your feed.",
-  "version": "1.0.0",
+  "description": "Block promoted tweets on your Twitter feed.",
+  "version": "1.0.1",
   "manifest_version": 3,
   "action": {
     "default_icon": {
