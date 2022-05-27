@@ -1,6 +1,8 @@
+const wordsBlacklisted = ['Promoted', 'Promovido'];
+
 const observer = new window.MutationObserver(() => {
   for (const target of document.querySelectorAll('span')) {
-    if ('Promoted' === target.textContent) {
+    if (wordsBlacklisted.indexOf(target.textContent) > -1) {
       const promotedTweet = target.closest('article').parentElement.parentElement.parentElement.parentElement;
       promotedTweet.style.display = 'none';
     }
